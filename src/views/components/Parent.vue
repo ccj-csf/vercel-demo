@@ -20,7 +20,7 @@ export default defineComponent({
                     <div onClick={add}>parent-add</div>
                     <Child count={countRef.value} onAdd={childAdd}
                         v-slots={{
-                            add: (data) => (<div>add-slot-{data.name + data.age}</div>)
+                            add: (data: any) => (<div>add-slot-{data.name + data.age}</div>)
                         }}
                     ></Child>
                 </Fragment>
