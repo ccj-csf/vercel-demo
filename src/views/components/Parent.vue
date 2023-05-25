@@ -16,13 +16,16 @@ export default defineComponent({
         return () => {
             return (
                 <Fragment>
-                    <div>parent-{countRef.value}</div>
+                    {/* <div>parent-{countRef.value}</div>
                     <div onClick={add}>parent-add</div>
                     <Child count={countRef.value} onAdd={childAdd}
                         v-slots={{
                             add: (data: any) => (<div>add-slot-{data.name + data.age}</div>)
                         }}
-                    ></Child>
+                    ></Child> */}
+                    <div class='text-blue-500 text-26px'>你好！</div>
+                    <div>欢迎来到西南偏南ccj的世界。。。</div>
+
                 </Fragment>
             )
         }
